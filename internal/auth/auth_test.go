@@ -15,7 +15,7 @@ func TestGetAPIKey(t *testing.T) {
 		t.Fatal(err.Error())
 	}
 
-	if apiKey != expectedApiKey {
+	if apiKey == expectedApiKey {
 		t.Fatalf("Expected apiKey != apiKey: '%s' != '%s'\n",
 			expectedApiKey, apiKey)
 	}
