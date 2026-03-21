@@ -16,3 +16,5 @@ jobs:
           go-version: "1.26.0"
       - name: Build
         run: ./scripts/buildprod.sh
+      - name: Deploy
+        run: echo gcloud builds submit --tag REGION-docker.pkg.dev/PROJECT_ID/REPOSITORY/IMAGE:TAG .
